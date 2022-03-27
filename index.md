@@ -8,7 +8,9 @@
 <center>{jiejiren,renmj}@stju.edu.cn, csqianzheng@gmail.com</center>
 <center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
 <br/><br/><br/>
-![name 图标](http://static.runoob.com/images/runoob-logo.png)
+<div align=center>
+<img src="http://static.runoob.com/images/runoob-logo.png” >
+</div>
 <br/>change name&link<br/>
 some description for your work~
 <br/><br/><br/><br/>
