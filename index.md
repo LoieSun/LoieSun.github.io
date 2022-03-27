@@ -9,7 +9,7 @@
 <center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
 <br/><br/><br/>
 ![name 图标](http://static.runoob.com/images/runoob-logo.png)
-change name&link<br/>
+<br/>change name&link<br/>
 some description for your work~
 <br/><br/><br/><br/>
   
@@ -32,8 +32,8 @@ if you need...
 <br/><br/><br/><br/>    
 
 ## Contact
-Jieji Ren
-School of Mechanical Engineering
+Jieji Ren<br/> 
+School of Mechanical Engineering<br/> 
 <jiejiren@sjtu.edu.cn>
 <br/><br/><br/><br/>
 
