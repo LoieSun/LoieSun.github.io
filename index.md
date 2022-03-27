@@ -1,3 +1,14 @@
+# <center><b>DiLiGenT<sup>2</sup>:A Potometric Stereo Benchmark Dataset with Controlled Shape and Material Variation</b></center>
+
+<center>Jieji Ren<sup>1</sup>, FeiShi Wang<sup>2</sup>, Jiahao Zhang<sup>2</sup>, Qian Zheng<sup>5</sup>, Mingjun Ren<sup>1<sup>*</sup></sup>, Boxing Shi<sup>2,3,4<sup>*</sup></sup></center>
+<center><sup>1</sup>ME, School of Mechanical Engineering, Shanghai Jiao Tong University, <sup>2</sup>NELVT, School of Computer Science, Peking University</center>
+<center><sup>3</sup>Institute for Artificial Intelligence, Peking University, <sup>4</sup>Beijing Academy of Artificial Intelligence</center>
+<center><sup>College of Computer Science and Technology, Zhejiang University</sup></center>
+<center>{jiejiren,renmj}@stju.edu.cn, csqianzheng@gmail.com</center>
+<center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
+
+
+
  ```markdown
 ![name 图标](http://static.runoob.com/images/runoob-logo.png)
 change name&link
