@@ -9,7 +9,7 @@
 <center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
 <br/><br/><br/>
 <div align=center>
-<img src="http://static.runoob.com/images/runoob-logo.png” >
+<img src="http://static.runoob.com/images/runoob-logo.png” />
 </div>
 <br/>change name&link<br/>
 some description for your work~
