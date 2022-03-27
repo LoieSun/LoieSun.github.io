@@ -11,8 +11,8 @@
 <div align=center>
 <img src="http://static.runoob.com/images/runoob-logo.png” width="640" height="200" />
 </div>
-<br/>change name&link<br/>
-some description for your work~
+<br/><center>change name&link</center><br/>
+<center>some description for your work~</center>
 <br/><br/><br/><br/>
   
 ## Abstract
