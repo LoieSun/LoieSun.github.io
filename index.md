@@ -8,7 +8,7 @@
 <center>{jiejiren,renmj}@stju.edu.cn, csqianzheng@gmail.com</center>
 <center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
 <br/><br/><br/>
-<div align=center>
+<div style="align: center">
 <img src="http://static.runoob.com/images/runoob-logo.png” width="640" height="200" />
 </div>
 <br/><center>change name&link</center><br/>
