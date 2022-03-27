@@ -7,10 +7,10 @@
 <center>{jiejiren,renmj}@stju.edu.cn, csqianzheng@gmail.com</center>
 <center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
 <br/><br/><br/>
-<center>![name 图标](http://static.runoob.com/images/runoob-logo.png)</center>
+![name 图标](http://static.runoob.com/images/runoob-logo.png)
 <br/>
-<center>change name&link</center><br/>
-<center>some description for your work~</center>
+change name&link<br/>
+some description for your work~
 <br/><br/><br/><br/>
   
 ## Abstract
@@ -47,7 +47,7 @@ A: balalabalalalabalabalabalala
 <br/><br/><br/><br/>  
 
 ## Media
-<center>![name 图标](http://static.runoob.com/images/runoob-logo.png)</center><br/>      
-<center>change name&link</center>
+![name 图标](http://static.runoob.com/images/runoob-logo.png)<br/>      
+change name&link
 
 
