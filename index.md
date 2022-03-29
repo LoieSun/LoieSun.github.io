@@ -1,14 +1,12 @@
-# <center><b>DiLiGenT<sup>2</sup>:A Potometric Stereo Benchmark Dataset with Controlled Shape and Material Variation</b></center>
+# <center><b>Title</b></center>
 <br/><br/>
-<center>Jieji Ren<sup>1</sup>, FeiShi Wang<sup>2</sup>, Jiahao Zhang<sup>2</sup>, Qian Zheng<sup>5</sup>, Mingjun Ren<sup>1<sup>*</sup></sup>, Boxing Shi<sup>2,3,4<sup>*</sup></sup></center>
-<center><sup>1</sup>ME, School of Mechanical Engineering, Shanghai Jiao Tong University</center> 
-<center><sup>2</sup>NELVT, School of Computer Science, Peking University</center>
-<center><sup>3</sup>Institute for Artificial Intelligence, Peking University, <sup>4</sup>Beijing Academy of Artificial Intelligence</center>
-<center><sup>5</sup>College of Computer Science and Technology, Zhejiang University</center>
-<center>{jiejiren,renmj}@stju.edu.cn, csqianzheng@gmail.com</center>
-<center>{wangfeishi,1900013264,shiboxin}@pku.edu.cn</center>
+<center>Zhifeng Xie<sup>1,2</sup>, Luoyi Sun<sup>1</sup>, Yuzhou Sun<sup>1</sup>, Chunpeng Yu<sup>1</sup>, Lizhuang Ma<sup>3</sup></center>
+<center><sup>1</sup>SFA, Shanghai Film Academy, Shanghai University</center> 
+<center><sup>1</sup>Shanghai Film Center</center>
+<center><sup>3</sup>Institute for Artificial Intelligence, Shanghai Jiao Tong University</center>
+<center>{zhifengxie,sunluoyi,yzsun,cpyu}@shu.edu.cn, lzma@sjtu.edu.cn</center>
 <br/><br/><br/>
-<div style="align: center">
+<div align=center>
 <img src="http://static.runoob.com/images/runoob-logo.png” width="640" height="200" />
 </div>
 <center>change name&link</center>
@@ -34,18 +32,11 @@ if you need...
 <br/><br/><br/><br/>    
 
 ## Contact
-Jieji Ren<br/> 
-School of Mechanical Engineering<br/> 
-<jiejiren@sjtu.edu.cn>
+Zhifeng Xie<br/> 
+Shanghai Flim Academy<br/> 
+<SunLuoyi@shu.edu.cn>
 <br/><br/><br/><br/>
 
-## Frequently Asked Questions(FAQ)
-if you need...    
-**Q1: balabalabalabalabalabala**<br/>
-A: balalabalalalabalabalabalala<br/>
-**Q1: balabalabalabalabalabala**<br/>
-A: balalabalalalabalabalabalala
-<br/><br/><br/><br/>  
 
 ## Media
 ![name 图标](http://static.runoob.com/images/runoob-logo.png)     
