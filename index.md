@@ -9,14 +9,14 @@
 ## 科研经历
 #### 基于时序对齐视觉特征映射的音效生成方法     
    &nbsp;&nbsp;2021.09 - 2022.03   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ChinaMM 2022 Reviewing<br/>
-   &nbsp;&nbsp;*针对无声视频片段，构建视觉特征引导模型，生成时序匹配、内容一致的声音效果<br/>
-   &nbsp;&nbsp;*提出一个由视觉特征聚合模块、视音频跨模态特征映射模块、音频解码模块组成的时序对齐特征映射网络；<br/>
-   &nbsp;&nbsp;*实验结果表明，对比目前最先进的方法，在保真度和对齐效果方面，均有显著提升。<br/>
+   &nbsp;&nbsp;+针对无声视频片段，构建视觉特征引导模型，生成时序匹配、内容一致的声音效果<br/> 
+   &nbsp;&nbsp;+提出一个由视觉特征聚合模块、视音频跨模态特征映射模块、音频解码模块组成的时序对齐特征映射网络； <br/> 
+   &nbsp;&nbsp;+实验结果表明，对比目前最先进的方法，在保真度和对齐效果方面，均有显著提升。<br/>
 #### Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
    &nbsp;&nbsp;2020.09 - 2021.03   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  ICIP 2021<br/>
-   &nbsp;&nbsp;*显著性目标检测旨在快速辨别图像中最明显的区域；<br/>
-   &nbsp;&nbsp;*提出了一种由特征交互模块(FIM)、特征聚合模块(FAM)和残差细化模块(RRM)组成的多尺度图卷积交互网络(MGCINet)；<br/>
-   &nbsp;&nbsp;*实验结果表明，新方法在不同的评估指标下的5个数据集上，性能优于现有方法。<br/>
+   &nbsp;&nbsp;+显著性目标检测旨在快速辨别图像中最明显的区域；<br/>
+   &nbsp;&nbsp;+提出了一种由特征交互模块(FIM)、特征聚合模块(FAM)和残差细化模块(RRM)组成的多尺度图卷积交互网络(MGCINet)；<br/>
+   &nbsp;&nbsp;+实验结果表明，新方法在不同的评估指标下的5个数据集上，性能优于现有方法。<br/>
 <br/><br/>
 
 ## 学术论文及项目经历
