@@ -1,17 +1,17 @@
 ## 教育背景
-#### 上海大学           2020-2023
- &#8195   上海电影学院   数字媒体创意工程   **硕士**<br/>
- &#8195   排名：1/19
-#### 云南大学           2015-2019
- &ensp   软件学院      数字媒体技术      **本科**<br/>
- &ensp   排名：7/77
+#### 上海大学     &nbsp; 2020-2023
+&nbsp;  上海电影学院  &nbsp; 数字媒体创意工程 &nbsp; **硕士**<br/>
+&nbsp; 排名：1/19
+#### 云南大学     &nbsp;    2015-2019
+&nbsp;  软件学院  &nbsp;  数字媒体技术 &nbsp;  **本科**<br/>
+&nbsp;  排名：7/77
 <br/><br/>
 ## 科研经历
 #### 基于时序对齐视觉特征映射的音效生成方法     
-   2021.09 - 2022.03        ChinaMM 2022 Reviewing
+   2021.09 - 2022.03   &nbsp;   ChinaMM 2022 Reviewing
   
 #### Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
-   2020.09 - 2021.03        ICIP 2021
+   2020.09 - 2021.03    &nbsp;  ICIP 2021
 <br/><br/>
 
 ## 学术论文及项目经历
