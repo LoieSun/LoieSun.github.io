@@ -15,7 +15,6 @@
    &nbsp;&nbsp;·提出一个由视觉特征聚合模块、视音频跨模态特征映射模块、音频解码模块组成的时序对齐特征映射网络； <br/> 
    &nbsp;&nbsp;·实验结果表明，对比目前最先进的方法，在保真度和对齐效果方面，均有显著提升。<br/>
 #### 基于多尺度图卷积交互网络的显著性目标检测方法  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2021.09 - 2022.03
-
    &nbsp;&nbsp;ICIP 2021<br/>
    &nbsp;&nbsp;·显著性目标检测旨在快速辨别图像中最明显的区域；<br/>
    &nbsp;&nbsp;·提出了一种由特征交互模块(FIM)、特征聚合模块(FAM)和残差细化模块(RRM)组成的多尺度图卷积交互网络(MGCINet)；<br/>
@@ -54,7 +53,7 @@ Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
 **科研技能**：熟练掌握多媒体、数字媒体理论基础；熟悉多模态学习、跨模态生成任务<br/>
 **语言能力**：英语（CET-6），“LSCAT中国翻译协会”S100级认证<br/>
 **数字媒体创作技能**：精通Adobe Photoshop, Premiere, Audition, Maya, 3Ds Max, Unity等软件<br/>
-
+<br/>
 
 
 
