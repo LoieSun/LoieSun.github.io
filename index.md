@@ -1,22 +1,22 @@
 ## 教育背景
-#### 上海大学     &nbsp; 2020-2023
-&nbsp;  上海电影学院  &nbsp; 数字媒体创意工程 &nbsp; **硕士**<br/>
-&nbsp; 排名：1/19
-#### 云南大学     &nbsp;    2015-2019
-&nbsp;  软件学院  &nbsp;  数字媒体技术 &nbsp;  **本科**<br/>
-&nbsp;  排名：7/77
+#### 上海大学 &nbsp;&nbsp;&nbsp;&nbsp; 2020-2023
+&nbsp;&nbsp;  上海电影学院  &nbsp;&nbsp; 数字媒体创意工程 &nbsp;&nbsp; **硕士**<br/>
+&nbsp;&nbsp;  排名：1/19
+#### 云南大学 &nbsp;&nbsp;&nbsp;&nbsp; 2015-2019
+&nbsp;&nbsp;  软件学院  &nbsp;&nbsp;&nbsp;&nbsp;  数字媒体技术 &nbsp;&nbsp;&nbsp;&nbsp;  **本科**<br/>
+&nbsp;&nbsp;  排名：7/77
 <br/><br/>
 ## 科研经历
 #### 基于时序对齐视觉特征映射的音效生成方法     
-   2021.09 - 2022.03   &nbsp;   ChinaMM 2022 Reviewing
+   &nbsp;&nbsp;2021.09 - 2022.03   &nbsp;&nbsp;&nbsp;   ChinaMM 2022 Reviewing
   
 #### Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
-   2020.09 - 2021.03    &nbsp;  ICIP 2021
+   &nbsp;&nbsp;2020.09 - 2021.03   &nbsp;&nbsp; &nbsp;  ICIP 2021
 <br/><br/>
 
 ## 学术论文及项目经历
-**基于时序对齐视觉特征映射的音效生成方法**(ChinaMM 2022)<br/>
-**Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection**(ICIP 2021)<br/>
+基于时序对齐视觉特征映射的音效生成方法(**ChinaMM 2022**)<br/>
+Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection(**ICIP 2021**)<br/>
 2019.02-2019.04，基于数字图像处理的短视频后期稳像制作应用设计与开发<br/>
 2018.03-2018.06，基于立体视觉的室内物体三维重建应用设计与开发<br/>
 2018.03-2018.06，基于开源关系型数据库的海量高并发图书管理系统设计与开发<br/>
@@ -66,9 +66,7 @@
 <center><sup>3</sup>Institute for Artificial Intelligence, Shanghai Jiao Tong University</center>
 <center>{zhifengxie,sunluoyi,yzsun,cpyu}@shu.edu.cn, lzma@sjtu.edu.cn</center>
 <br/><br/><br/>
-<div align=center>
-<img src="http://static.runoob.com/images/runoob-logo.png” width="640" height="200" />
-</div>
+
 <center>change name&link</center>
 <center>some description for your work~</center>
 <br/><br/><br/><br/>
@@ -82,24 +80,11 @@ paste your abstract here~
 *Supplement([PDF](ww.baidu.com))    
 *Dataset([PDF](ww.baidu.com))    
 <br/><br/><br/><br/> 
-  
-## Citations
-paste your citations here~   
-<br/><br/><br/><br/> 
-  
-## Press
-if you need...   
-<br/><br/><br/><br/>    
 
 ## Contact
-Zhifeng Xie<br/> 
 Shanghai Flim Academy<br/> 
 <SunLuoyi@shu.edu.cn>
-<br/><br/><br/><br/>
 
 
-## Media
-![name 图标](http://static.runoob.com/images/runoob-logo.png)     
-change name&link
 
 
