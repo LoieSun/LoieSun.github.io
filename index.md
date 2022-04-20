@@ -3,7 +3,7 @@
 &nbsp;&nbsp;  上海电影学院  &nbsp;&nbsp; 数字媒体创意工程 &nbsp;&nbsp; **硕士**<br/>
 &nbsp;&nbsp;  排名：1/19
 #### 云南大学 &nbsp;&nbsp;&nbsp;&nbsp; 2015-2019
-&nbsp;&nbsp;  软件学院  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  数字媒体技术 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **本科**<br/>
+&nbsp;&nbsp;  软件学院  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  数字媒体技术 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **本科**<br/>
 &nbsp;&nbsp;  排名：7/77
 <br/><br/>
 ## 科研经历
