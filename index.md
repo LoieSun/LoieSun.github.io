@@ -9,9 +9,14 @@
 ## 科研经历
 #### 基于时序对齐视觉特征映射的音效生成方法     
    &nbsp;&nbsp;2021.09 - 2022.03   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ChinaMM 2022 Reviewing
-  
+   &nbsp;&nbsp;*针对无声视频片段，构建视觉特征引导模型，生成时序匹配、内容一致的声音效果
+   &nbsp;&nbsp;*提出一个由视觉特征聚合模块、视音频跨模态特征映射模块、音频解码模块组成的时序对齐特征映射网络；
+   &nbsp;&nbsp;*实验结果表明，对比目前最先进的方法，在保真度和对齐效果方面，均有显著提升。
 #### Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
    &nbsp;&nbsp;2020.09 - 2021.03   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  ICIP 2021
+   &nbsp;&nbsp;*显著性目标检测旨在快速辨别图像中最明显的区域；
+   &nbsp;&nbsp;*提出了一种由特征交互模块(FIM)、特征聚合模块(FAM)和残差细化模块(RRM)组成的多尺度图卷积交互网络(MGCINet)；
+   &nbsp;&nbsp;*实验结果表明，新方法在不同的评估指标下的5个数据集上，性能优于现有方法。
 <br/><br/>
 
 ## 学术论文及项目经历
@@ -47,43 +52,6 @@ Multi-Scale Gragh Convolutional Interaction Network for Salient Object Detection
 **语言能力**：英语（CET-6），“LSCAT中国翻译协会”S100级认证<br/>
 **数字媒体创作技能**：精通Adobe Photoshop, Premiere, Audition, Maya, 3Ds Max, Unity等软件<br/>
 
-
-
-
-
-
-
-
-
-
-
-
-# <center><b>Title</b></center>
-<br/><br/>
-<center>Zhifeng Xie<sup>1,2</sup>, Luoyi Sun<sup>1</sup>, Yuzhou Sun<sup>1</sup>, Chunpeng Yu<sup>1</sup>, Lizhuang Ma<sup>3</sup></center>
-<center><sup>1</sup>SFA, Shanghai Film Academy, Shanghai University</center> 
-<center><sup>1</sup>Shanghai Film Center</center>
-<center><sup>3</sup>Institute for Artificial Intelligence, Shanghai Jiao Tong University</center>
-<center>{zhifengxie,sunluoyi,yzsun,cpyu}@shu.edu.cn, lzma@sjtu.edu.cn</center>
-<br/><br/><br/>
-
-<center>change name&link</center>
-<center>some description for your work~</center>
-<br/><br/><br/><br/>
-  
-## Abstract
-paste your abstract here~
-<br/><br/><br/><br/>  
-  
-## File
-*Paper([PDF](ww.baidu.com))    
-*Supplement([PDF](ww.baidu.com))    
-*Dataset([PDF](ww.baidu.com))    
-<br/><br/><br/><br/> 
-
-## Contact
-Shanghai Flim Academy<br/> 
-<SunLuoyi@shu.edu.cn>
 
 
 
