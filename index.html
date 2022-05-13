@@ -108,17 +108,17 @@
                </td>
 	     </tr>
 		
-	     <tr onmouseout="acm_stop()" onmouseover="acm_start()">
+	     <tr onmouseout="vs_stop()" onmouseover="vs_start()">
                <td style="padding:20px;width:25%;vertical-align:middle">
                  <div class="one">
                    <div class="two" id='vs_image'><img src='images/video_stable2.png' alt="vs" width="170" height="150"></div>
                    <img src='images/video_stable1.png' alt="cvs" width="170" height="150">
                  </div>
                  <script type="text/javascript">
-                   function acm_start() {
+                   function vs_start() {
                      document.getElementById('vs_image').style.opacity = "1";
                    }
-                   function acm_stop() {
+                   function vs_stop() {
                      document.getElementById('vs_image').style.opacity = "0";
                    }
                    acm_stop()
@@ -139,18 +139,18 @@
                </td>
 	    </tr>
 
-	    <tr onmouseout="acm_stop()" onmouseover="acm_start()">
+	    <tr onmouseout="web_stop()" onmouseover="web_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='vs_image'><img src='images/web2.png' alt="web" width="170" height="150"></div>
+                  <div class="two" id='web_image'><img src='images/web2.png' alt="web" width="170" height="150"></div>
                   <img src='images/web1.png' alt="web" width="170" height="150">
                 </div>
                 <script type="text/javascript">
-                  function acm_start() {
-                    document.getElementById('vs_image').style.opacity = "1";
+                  function web_start() {
+                    document.getElementById('web_image').style.opacity = "1";
                   }
-                  function acm_stop() {
-                    document.getElementById('vs_image').style.opacity = "0";
+                  function web_stop() {
+                    document.getElementById('web_image').style.opacity = "0";
                   }
                   acm_stop()
                 </script>
