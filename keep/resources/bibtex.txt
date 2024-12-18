@@ -1,5 +1,6 @@
-@inproceedings{sun2024auto,
-  title={Auto-ACD: A Large-scale Dataset for Audio-Language Representation Learning},
-  author={Sun, Luoyi and Xu, Xuenan and Wu, Mengyue and Xie, Weidi},
-  booktitle={ACM Multimedia 2024}
+@article{zhou2024keep,
+  title={A Knowledge-enhanced Pathology Vision-language Foundation Model for Cancer Diagnosis},
+  author={Xiao Zhou, Luoyi Sun, Dexuan He, Wenbin Guan, Ruifen Wang, Lifeng Wang, Xin Sun, Kun Sun, Ya Zhang, Yanfeng Wang, Weidi Xie},
+  journal={arXiv preprint arXiv:2412.13126},
+  year={2024}
 }
