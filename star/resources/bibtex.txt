@@ -1,0 +1,5 @@
+@inproceedings{sun2024auto,
+  title={Auto-ACD: A Large-scale Dataset for Audio-Language Representation Learning},
+  author={Sun, Luoyi and Xu, Xuenan and Wu, Mengyue and Xie, Weidi},
+  booktitle={ACM Multimedia 2024}
+}

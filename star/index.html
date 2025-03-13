@@ -1,0 +1,522 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Book';
+   src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+   }
+
+  body {
+    font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:300;
+  }
+  h2 {
+    font-weight:300;
+  }
+
+  p {
+    font-weight:300;
+    line-height: 1.4;
+  }
+
+  code {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  pre.prettyprint > code {
+    border: none;
+  }
+
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+  }
+  .image {
+        flex-basis: 40%
+  }
+  .text {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      background-color: #FFFFFF;
+      padding: 10px;
+}
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
+  <title>STAr</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+  <br>
+  <center>
+  <span style="font-size:36px">Towards Spatiotemporal Audio-visual Grounding in the Wild</span><br><br><br>
+  </center>
+  <table align="center" width="800px">
+            <tbody><tr>
+                    <td align="center" width="170px">
+              <center>
+                <span style="font-size:16px">Luoyi Sun</a><sup>1,2</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="170px">
+              <center>
+                <span style="font-size:16px">Xiao Zhou<sup>2</sup></span>
+                </center>
+              </td>
+              <td align="center" width="170px">
+              <center>
+                <span style="font-size:16px">Yueting Zhuang<sup>1</sup></span>
+                </center>
+              </td>
+              <td align="center" width="170px">
+              <center>
+                <span style="font-size:16px">Ya Zhang<sup>2, 3</sup></span>
+                </center>
+              </td>
+              <td align="center" width="170px">
+              <center>
+                <span style="font-size:16px">Yanfeng Wang<sup>2, 3</sup></span>
+                </center>
+              </td>
+              <td align="center" width="230px">
+<!-- 
+                    <td align="center" width="225px">
+              <center>
+                <span style="font-size:16px">Mengyue Wu</a><sup>2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+                </center>
+                </td> -->
+                    <!-- <td align="center" width="225px"> -->
+              <center>
+                <span style="font-size:16px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>2, 3 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+                </center>            
+            
+          </td></tr>
+        </tbody></table><br>
+  
+  <table align="center" width="700px">
+            <tbody><tr>
+                    <!-- <td align="center" width="50px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center> -->
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                    <span style="font-size:16px"><sup>1</sup> Zhejiang University</span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                    <span style="font-size:16px"><sup>2</sup> Shanghai AI Lab</span>
+                </center>
+                </td>
+                <td align="center" width="300px">
+                  <center>
+                        <span style="font-size:16px"><sup>3</sup> SAI, Shanghai Jiao Tong university</span>
+                    </center>
+        </tr></tbody></table>
+
+   <br>
+  <table align=center width=500px>
+        <tr>
+          <td align=center width=500px>
+            <center>
+              <span style="font-size:22px">
+                <span style="font-size:20px">In Preview</span>
+              </span>
+            </center>
+          </td>
+        </tr>
+      </table> 
+  <br><hr>
+  <table align="center" width="750px">
+            <tbody><tr>
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">Code
+                    <a href="https://github.com/LoieSun/Auto-ACD"> [GitHub]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Paper <a href="https://arxiv.org/abs/2309.11500"> [arXiv]</a>
+<!--                     Paper  -->
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Cite <a href="./resources/bibtex.txt"> [BibTeX]</a>
+<!--                     Cite  -->
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="210px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Dataset <a href="https://huggingface.co/datasets/Loie/Auto-ACD"> [HuggingFace]</a>
+                  </span>
+                </center>
+              </td>
+            </tr></tbody>
+      </table>
+  
+      <br><hr>
+      
+
+<!--       
+        <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+          <div class="container">
+        <div class="image" width="500px">
+          <center><p><img class="center" src="./resources/teaser1.png" width="450px"></p></center>
+        </div>
+          <p style="text-align:justify; text-justify:inter-ideograph;"><left></left>
+          We present an innovative and <strong>automatic</strong> audio caption generation pipeline(<strong>*</strong>), construct a large-scale, high-quality, audio-language dataset, named as <strong>Auto-ACD</strong>, comprising over <strong>1.9M </strong> audio-text pairs. 
+          As shown in the left figure, The text descriptions in Auto-ACD contain <strong>long texts (18 words)</strong> and <strong>diverse vocabularies (23K)</strong>, and provide information about the <strong>surrounding auditory environment</strong>(data point with <strong>shadow</strong>) in which sounds take place.
+        </left></p>  
+      </div>
+      </left></p> -->
+      <p><img class="left" src="./resources/teaser1.png" width="800px"></p>
+      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+        Overview of various audio-visual tasks. 
+        <strong>(a)Audio-visual Synchronization:</strong> predict temporal offset between audio and video streams. 
+        <strong>(b)Audio-visual Segmentation:</strong> highlight sound-emitting regions within images. 
+        <strong>(c)Audio-visual Grounding~(ours):</strong> ground an audio segment in the video sequence both temporally~(when the sound occurs), and spatially (where the sound is emitted).
+       </left></p>
+     <hr>
+      <br>
+
+
+
+  
+
+      <center><h2> Abstract </h2> </center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      </p><div class="container">
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+            <left>
+            Exploring the relationship between synchronized video and audio has always been an intriguing challenge. Previous studies have primarily focused on either the temporal or spatial relationship between the two modalities. However, the relationship between audio and video should exhibit consistency across both temporal and spatial dimensions.
+            To address this, we propose a novel task, audio-visual grounding. By inputting a brief audio clip, the model could ground the temporal and spatial locations of the audio-visual event within an extended video. Specifically, we make three key contributions:
+            First, we construct a large-scale,  high-quality, frame-pixel-level, audio-visual grounding dataset, <strong>AVGrounding</strong>, comprising approximately 7,000 data pairs. We employ a series of state-of-the-art tools, to collect timing and labels of audio-visual events, and generate accurate and dense masks within videos. 
+            Second, we develop a spatiotemporal audio-visual grounding model, named <strong>STAr</strong>, to ground the spatial and temporal location of the sounding object within a video. 
+            % Third, we conduct extensive comparative and ablation studies, and show performance improvement on various downstream tasks, for example, audio-visual synchronization, audio-visual segmentation.
+            Third, we establish a novel benchmark for the comprehensive evaluation of spatiotemporal grounding capabilities in audio-visual models. 
+            Extensive experiments demonstrate the effectiveness of our STAr approach, which achieves superior performance by simultaneously optimizing temporal and spatial correspondence during the training process.
+          </left></p>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <center> <h2> AVGrounding Dataset Preview </h2> </center>
+      <div class="grid-container">
+       <div>
+         <video width="250"  controls>
+           <source src="resources/2PSepowyWHE_000014.mp4" type="video/mp4">
+           <source src="resources/2PSepowyWHE_000014.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               A singing bowl resonates with a gentle gong sound, accompanied by soft music playing in a church.
+           </left></p> -->
+         </div>
+       </div>
+       
+
+
+
+       <div>
+         <video width="250"  controls>
+           <source src="resources/3uiyWtZEbTs_000060.mp4" type="video/mp4">
+           <source src="resources/3uiyWtZEbTs_000060.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               Sheep bleat in the distance as people talk faintly, creating a pastoral atmosphere in a wheat field.
+           </left></p> -->
+         </div>
+       </div>
+
+       <div>
+         <video width="250"  controls>
+           <source src="resources/4wqmxClvupU_000200.mp4" type="video/mp4">
+           <source src="resources/4wqmxClvupU_000200.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               An emergency vehicle siren blares loudly as a fire engine speeds through the city streets, signaling an urgent situation.
+           </left></p> -->
+         </div>
+       </div>
+
+       <div>
+         <video width="250"  controls>
+           <source src="resources/AKxHQn994OI_000140.mp4" type="video/mp4">
+           <source src="resources/AKxHQn994OI_000140.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               The motorcycle engine revs up and down while driving through a residential neighborhood, accompanied by some speech and light engine sounds.
+           </left></p> -->
+         </div>
+       </div>
+       
+       <div>
+         <video width="250"  controls>
+           <source src="resources/1gEwupJTJrg_000160.mp4" type="video/mp4">
+           <source src="resources/1gEwupJTJrg_000160.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               Bird wings flap as rustling and birds chirping in the background create a serene ambiance in a garden.
+           </left></p> -->
+         </div>
+       </div>
+
+       <div>
+         <video width="250"  controls>
+           <source src="resources/2gEhuX9uHgg_000429.mp4" type="video/mp4">
+           <source src="resources/2gEhuX9uHgg_000429.ogg" type="video/ogg">
+         </video>
+         <div class="text" width="270px"> 
+           <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+             <left>
+               A roaring crowd erupts in cheers and battle cries, creating an electrifying atmosphere during a lively event.
+           </left></p> -->
+         </div>
+       </div>
+
+         </video>
+       </div> 
+   </div>
+     <br>
+     <hr>
+     <br>
+
+      <center> <h2> Architecture </h2> </center>
+      <p><img class="left" src="./resources/arch1.png" width="800px"></p>
+      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+        The architecture detail of our proposed <strong>STAr</strong>. 
+        <strong>(a)</strong> shows the audio and visual encoders and aggregation methods for both modalities. </strong>(b)</strong>demonstrates the temporal grounding module with synchronization transformer and MLP. 
+        </strong>(c)</strong> illustrates the spatiotemporal grounding decoder, which consists of transformer decoder and SAM 2 decoder modules. </left></p>
+      
+      <br>
+      <hr>
+      <br>
+
+
+      <center> <h2> Dataset Collection </h2> </center>
+      <p><img class="left" src="./resources/pipe3.png" width="800px"></p>
+      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+        Data collection pipeline. We utilize Qwen2.5 to rewrite labels, use Grounded-SAM-2 to generate dense masks, and filter them with time information to obtain spatiotemporal audio-visual grounding masks.</left></p>
+      
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Protocol-I: Audio-visual Temporal Groungding</h2></center>
+      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+        Temporal grounding results and comparison with other AVS models. SparseSync and Synchformer denote the performance from off-the-shelf models. Synchformer-MLP and Synchformer-SyncMLP suggest finetuning results, where Synchformer-MLP indicates that only MLP layers of Synchformer are active during training, and Synchformer-SyncMLP finetunes the synchronization transformer and the MLP layers in the curated AVGrounding dataset. Acck and Acck tol refer to Accuracy@k and Tolerance Accuracy@k, respectively.
+      </left></p>
+      <p><img class="center" src="./resources/sync.png" width="800px"></p>
+
+   
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Protocol-II: Audio-visual Spatial Grounding</h2></center>
+      <!-- <p><b>Comparison with SAMA-AVS and CAVP and AVGrounding-V and AVGrounding-A. </b> </p> -->
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/seg.png" width="375px"></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+            Spatial grounding results and comparison with other models. AVGrounding and AVGrounding Event-Centric represent randomly selecting video and audio segments versus selecting segments centered around audio-visual events.
+            </left></p>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Protocol-III:Abalation Study</h2></center>
+      
+      <!-- <p><b>Comparison  on DCASE 2020 Mobile and AudioSet Env.</b> </p> -->
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/ablation1.png" width="375px"></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;"><left></left>
+            Module ablation results. “S. T.”, “Cro. ” and “SAM” refer to synchronization transformer, cross-attention module, and SAM-2 decoder, respectively.
+        </left></p>
+
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/ablation2.png" width="375px"></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;"><left></left>
+            Loss weights ablation results. The learning rate for all experiments is 4e-5.
+        </left></p>
+        
+        </div>
+      </div>
+
+      
+
+      <br>
+      <hr>
+      <center> <h2> Acknowledgements </h2> </center>
+      <p> 
+        Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+      </p>
+      <br>
+<br>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
