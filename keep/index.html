@@ -267,9 +267,9 @@
     </tbody>
   </table>
 
-  <br>
+  <!-- <br> -->
 
-  <table align=center width=500px>
+  <!-- <table align=center width=500px>
     <tr>
       <td align=center width=500px>
         <center>
@@ -278,7 +278,7 @@
           </span>
       </td>
     </tr>
-  </table> 
+  </table>  -->
   <br>
   <hr>
   <table align="center" width="750px">
@@ -432,7 +432,7 @@
     <strong>d.</strong> Performance comparisons of different models on the zero-shot tile image classification task. The error bar denotes the standard deviation of the results from 1000 bootstrapping iterations.
     `Average' suggests the mean of performance across all datasets.
   </p>
-  <p><img class="center" src="./resources/subtyping.png" width="800px"></p>
+  <p><img class="center" src="./resources/rare.png" width="800px"></p>
 
   <br>
   <hr>
@@ -454,6 +454,49 @@
   <hr>
   <br>
 
+  <center> <h2> Discussion </h2> </center>
+  <!-- <p><img class="left" src="./resources/arch.png" width="800px"></p> -->
+  <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+    In this study, we present KEEP, a novel vision-language foundation model specifically designed to tackle challenges in computational pathology. 
+    By incorporating disease-specific knowledge, KEEP achieves state-of-the-art performance in zero-shot cancer diagnosis. 
+    In particular, for cancer detection, KEEP significantly outperforms CHIEF, achieving a notable improvement in sensitivity (0.898) at a specificity of 0.95 across multiple cancer types. 
+    Similarly, in cancer subtyping, KEEP outperforms CONCH and MUSK by integrating disease-specific knowledge, which improves the alignment between pathology images and subtype semantics.
+    Notably, in rare cancer subtyping tasks, KEEP achieves a balanced accuracy improvement of 8.5 points over CONCH. 
+    Furthermore, when applied to in-house rare pediatric cancer subtyping tasks, KEEP outperforms other foundation models in the neuroblastoma and hepatoblastoma datasets.
+    <br>
+    <br>
+
+
+    The superior performance of KEEP compared to other models can be primarily attributed to two factors: 
+    the injection of disease knowledge during training and the tumor-ratio-based prediction strategy employed in downstream tasks: 
+    (i) integration of disease knowledge during training: disease knowledge is incorporated through three key mechanisms. 
+    First, the language model is employed to encode the disease knowledge graph(KG), aligning the representation space of disease names, definitions, synonyms, and hierarchical relationships.
+    This alignment serves as a bridge, implicitly linking pathology images with their corresponding disease types during the vision-language pre-training process. 
+    Second, the extensive use of disease synonyms within the disease KG explicitly highlights critical disease-related information in the textual descriptions of images.
+    This transformation converts weak supervision signals from free-text annotations into stronger disease-level supervision, thereby reinforcing the connection between pathology images and disease entities. 
+    Finally, the hierarchical structure of the disease KG organizes image-text pairs into semantic groups with hypernym-hyponym relationships, significantly enhancing alignment accuracy. 
+    (ii) tumor-ratio-based prediction in downstream tasks: for both cancer detection and subtyping, mathematical analysis and experimental results demonstrate that the tumor-ratio-based prediction serves as an intuitive and effective way for estimating the neoplastic and subtyping probability of WSIs. 
+    Unlike methods that aggregate tile-level features, the tumor-ratio-based approach leverages tumor region localization to deliver superior interpretability, a critical requirement for clinical applications. 
+    Moreover, compared to approaches that predict tumor subtypes by selecting top-k tumor patches, the tumor-ratio-based method is non-parametric, offering a more straightforward and transparent classification process.
+    <br>
+    <br>
+
+    While promising, this study also faces several limitations: 
+    (i) although KEEP demonstrates strong performance in rare cancer subtyping, its predictions for certain subtypes remain limited due to the scarcity of these cases in the image-text training data. 
+    In these instances, few-shot learning, where at least one whole slide image(WSI) per subtype is available, could enhance model performance by capturing the diversity within rare cancer subtypes. 
+    (ii) while pathology vision-language models exhibit robust zero-shot ability, their performance is often dependent on prompt engineering, which can limit their adaptability and robustness across diverse datasets. 
+    A promising avenue for improvement is prompt learning, wherein the model learns a trainable prompt from a small set of example WSIs, replacing manually designed prompts. 
+    This approach would enable the model to adapt more effectively to varied datasets and tasks, enhancing its generalizability and robustness.
+    (iii) another promising avenue for improvement is the multi-modal alignment that introduces genomic, or epigenomic information.
+    <br>
+    <br>
+
+    In conclusion, our results demonstrate that KEEP offers a powerful tool for cancer diagnosis by injecting domain-specific knowledge into vision-language models. 
+    KEEP shows great promise in advancing computational pathology and has the potential to make a significant impact in clinical settings, offering improved accuracy and interpretability in cancer diagnosis.
+
+  <br>
+  <hr>
+  <br>
   <center> <h2> Acknowledgements </h2> </center>
   <p> 
     Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
