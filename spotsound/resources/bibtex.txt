@@ -1,0 +1,4 @@
+@inproceedings{sun2026spotsound,
+  title={SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding},
+  author={Sun, Luoyi and Zhou, Xiao and Li, Zeqian and Zhang, Ya and Wang, Yanking and Xie, Weidi},
+}
