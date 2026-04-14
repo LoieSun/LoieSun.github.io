@@ -1,0 +1,447 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Book';
+   src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+   }
+
+  body {
+    font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:300;
+  }
+  h2 {
+    font-weight:300;
+  }
+
+  p {
+    font-weight:300;
+    line-height: 1.4;
+  }
+
+  code {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  pre.prettyprint > code {
+    border: none;
+  }
+
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+  }
+  .image {
+        flex-basis: 40%
+  }
+  .text {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      background-color: #FFFFFF;
+      padding: 10px;
+}
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
+  <title>SpotSound</title>
+  <link rel="icon" href="./resources/item.png" type="image/png">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+  <br>
+  <center>
+  <span style="font-size:36px">SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding</span><br><br><br>
+  </center>
+  <table align="center" width="800px">
+            <tbody><tr>
+                    <td align="center" width="175px">
+              <center>
+                <span style="font-size:16px">Luoyi Sun</a><sup>1,2</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="175px">
+              <center>
+                <span style="font-size:16px">Xiao Zhou<sup>3</sup></span>
+                </center>
+              </td>
+                    <td align="center" width="175px">
+                <center>
+                  <span style="font-size:16px">Zeqian Li<sup>3</sup></span>
+                  </center>
+                </td>
+                    
+                    <td align="center" width="225px">
+              <center>
+                <span style="font-size:16px">Ya Zhang</a><sup>2,3</sup></span>
+                </center>
+                </td>
+                    <td align="center" width="225px">
+                <center>
+                  <span style="font-size:16px">Yanfeng Wang</a><sup>2,3</sup></span>
+                  </center>
+                  </td>
+                    <td align="center" width="225px">
+              <center>
+                <span style="font-size:16px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>2,3 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+                </center>            
+            
+          </td></tr>
+        </tbody></table><br>
+  
+  <table align="center" width="700px">
+            <tbody><tr>
+                    <td align="center" width="50px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                    <span style="font-size:16px"><sup>1</sup>Zhejiang University</span>
+                </center>
+                </td>
+                    <td align="center" width="200px">
+              <center>
+                    <span style="font-size:16px"><sup>2</sup>Shanghai AI Lab</span>
+                </center>
+                </td>
+                <td align="center" width="300px">
+                  <center>
+                        <span style="font-size:16px"><sup>2</sup>Shanghai Jiao Tong University</span>
+                    </center>
+                    </td>
+        </tr></tbody></table>
+
+   <br>
+  <table align=center width=500px>
+        <tr>
+          <td align=center width=500px>
+            <center>
+              <span style="font-size:22px">
+                <span style="font-size:20px">Under Review</span>
+              </span>
+            </center>
+          </td>
+        </tr>
+      </table> 
+  <br><hr>
+  <table align="center" width="750px">
+            <tbody><tr>
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">Code
+                    <a href="https://github.com/LoieSun/SpotSound"> [GitHub]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Paper <a href="https://arxiv.org/abs/2309.11500"> [arXiv]</a>
+<!--                     Paper  -->
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="180px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Cite <a href="./resources/bibtex.txt"> [BibTeX]</a>
+<!--                     Cite  -->
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="210px">
+                <center>
+                  <br>
+                  <span style="font-size:17px">
+                    Dataset <a href="https://huggingface.co/datasets/Loie/SpotSound-Bench"> [HuggingFace]</a>
+                  </span>
+                </center>
+              </td>
+            </tr></tbody>
+      </table>
+  
+      <br><hr>
+
+      
+        <p style="text-align:justify; text-justify:inter-ideograph;">
+          <div class="container">
+        <div class="image" width="500px">
+          <center><p><img class="center" src="./resources/teaser.png" alt="Qualitative examples and performance comparison" width="450px" ></p></center>
+        </div>
+          <p style="text-align:justify; text-justify:inter-ideograph; padding-left: 20px;">
+          Large Audio-Language Models (ALMs) struggle with <strong>temporal grounding</strong>, the task of pinpointing exactly when an event occurs within long-form audio. We introduce <strong>SpotSound</strong>, an audio language model designed for precise temporal grounding. SpotSound incorporates a novel training objective to suppress hallucinated timestamps and accurately grounds short events obscured by dense background sounds.
+        </p>  
+      </div>
+      </p>
+      <hr>
+      <br>
+
+      <center><h2> Abstract </h2> </center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      </p><div class="container">
+        <div class="text" width="800px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+              Large Audio-Language Models (ALMs) have recently demonstrated remarkable capabilities in holistic audio understanding, yet they remain unreliable for temporal grounding, <i>i.e.</i>, the task of pinpointing exactly when an event occurs within long-form audio. This limitation stems from two factors: training data dominated by clip-level supervision lacking precise timestamps, and benchmarks that fail to simulate real-world scenarios where short events are obscured by dense background sounds. In this paper, we introduce <strong>SpotSound</strong>, an audio language model designed for grounding audio events. SpotSound incorporates a novel training objective, specifically designed to suppress hallucinated timestamps for events absent from the input. Additionally, we present <strong>SpotSound-Bench</strong>, a challenging temporal grounding benchmark where target events occupy less than 10% of each clip, creating a rigorous ‘needle-in-a-haystack’ evaluation. Experiments demonstrate that SpotSound achieves state-of-the-art results on temporal grounding benchmarks while maintaining robust performance across general downstream audio-language tasks.
+          </p>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <center><h2> Methodology: Timestamp-Interleaved Sequence</h2></center>
+      
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/method.png" alt="Non-existent Event Example" width="375px" ></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+        To establish a precise alignment between audio features and their temporal positions, we explicitly encode time by inserting textual timestamp tokens before the corresponding audio tokens at a fixed granularity (e.g., 1 second). We harness the retrieval capabilities of ALMs to read out the inserted timestamp tokens rather than decoding dense positional encodings. 
+      </p>
+        </div>
+      </div>
+
+      
+      <br>
+      <hr>
+      <br>
+
+      <center><h2> Dataset Generation Pipeline</h2></center>
+      
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/pipe.png" alt="Non-existent Event Example" width="375px" ></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+        We construct a temporally-aware audio-language dataset comprising 77.6k samples. To enrich supervision with denser linguistic cues, we employ LLMs (e.g., DeepSeek-v3 and Qwen2-Audio) to generate fine-grained captions for foreground audio. We then randomly mix these foreground sounds with background ambiance, preserving the insertion timestamp as the ground-truth for robust temporal grounding training.
+      </p>
+        </div>
+      </div>
+      
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>SpotSound-Bench: A 'Needle-in-a-Haystack' Evaluation</h2></center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+        Existing benchmarks often feature high ratios of target-window duration to full audio clip duration. We introduce <strong>SpotSound-Bench</strong>, featuring short acoustic events embedded within long, unstructured recordings. With an average clip length of 53.4s and target events averaging 4.5s (a temporal density of 8.4%), this benchmark creates a large search space dominated by background content, demanding high temporal precision and robustness against hallucinations.
+      </p>
+    
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Experimental Results: Audio Temporal Grounding</h2></center>
+      <div class="container">
+        <div class="text" width="800px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+            We evaluate SpotSound (built upon Qwen2-Audio and Audio Flamingo 3) against task-specific methods and recent large audio-language models. SpotSound achieves state-of-the-art results across multiple benchmarks, including Clotho-Moment, UnAV-100 subset, AudioGrounding, and our proposed SpotSound-Bench. Notably, SpotSound-A surpasses previous methods in mIoU by <strong>+20.4%</strong> on SpotSound-Bench and <strong>+27.0%</strong> on the UnAV-100 subset.
+          </p>
+        </div>
+      </div>
+      <p><center><img src="./resources/atg.png" alt="Audio temporal grounding results table" width="750px" ></center></p>
+
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Hallucination Mitigation for Negative Samples</h2></center>
+      
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/hallu.png" alt="Non-existent Event Example" width="375px" ></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+          A recurring failure mode in previous ALMs is the tendency to predict temporal windows regardless of whether the queried event is actually present. By restructuring training instances into a discriminative quadruplet format (including negative queries), SpotSound reliably determines event presence. SpotSound-A achieves up to <strong>93.4%</strong> accuracy on positive samples and <strong>87.9%</strong> on negative samples in AudioGrounding, demonstrating strong robustness against hallucinations.
+        </p>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Two-stage Joint Assessment</h2></center>
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/two-stage.png" alt="Non-existent Event Example" width="375px" ></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+           We evaluate model performance by combining two stages: determining the presence of a sound event and predicting the corresponding time window, utilizing the F1-score. While existing large ALMs underperform due to their susceptibility to hallucinating non-existent events and a lack of audio temporal grounding capabilities, our proposed SpotSound models consistently maintain highly competitive performance across all benchmarks.
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Sound Event Detection</h2></center>
+      <div class="container">
+        <div class="image" width="400px">
+          <center><p><img class="center" src="./resources/sed.png" alt="Non-existent Event Example" width="375px" ></p></center>
+        </div>
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+           To further assess the generalization capability of SpotSound, we evaluate on standard Sound Event Detection (SED) benchmarks, specifically TUT Sound Events 2017 and DESED. Despite the complexity of these datasets, SpotSound achieves the highest results, demonstrating broad generalization and robust temporal grounding accuracy even on standard SED tasks.
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <center><h2>Qualitative Results</h2></center>
+      <div class="container">
+        <div class="text" width="800px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+           We present qualitative examples comparing SpotSound's predictions with ground truth annotations and baseline models. SpotSound demonstrates precise temporal localization for short, transient sounds embedded in complex backgrounds. Furthermore, when queried with events that do not exist in the audio clip, SpotSound correctly identifies their absence, avoiding the hallucination issues prevalent in previous Large Audio-Language Models.
+          </p>
+        </div>
+      </div>
+      <p><center><img src="./resources/visualizaition.png" alt="Qualitative results showing temporal grounding" width="750px" ></center></p>
+
+      <br>
+      <hr>
+      <center> <h2> Acknowledgements </h2> </center>
+      <p> 
+        Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+      </p>
+      <br>
+<br>
+
+</body></html>
